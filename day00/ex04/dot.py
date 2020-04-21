@@ -24,7 +24,7 @@ if __name__ == "__main__":
     X = np.array([0, 15, -9, 7, 12, 3, -21])
     Y = np.array([2, 14, -13, 5, 12, 4, -19])
     if np.dot(X, Y) == dot(X, Y):
-        if np.dot(X,X) == dot(X,X):
+        if np.dot(X, X) == dot(X, X):
             print("OK")
         else:
             print("NOT OK")
