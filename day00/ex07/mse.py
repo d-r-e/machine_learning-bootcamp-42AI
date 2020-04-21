@@ -7,13 +7,7 @@ def mse(y, y_hat):
         return None
     if y.shape != y_hat.shape or len(y.shape) != 1:
         return None
-    m = y.size
-    ret = 0
-    for i in range(y.size):
-        ret += (y[i] - y_hat[i]) ** 2
-    ret = ret / m
-
-    return ret
+    return np.sum((y - y_hat) ** 2) / y.size
 
 
 if __name__ == "__main__":
