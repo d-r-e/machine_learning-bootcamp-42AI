@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 import numpy as np
 
+
 def mse(y, y_hat):
     if type(y) != np.ndarray or type(y_hat) != np.ndarray:
         return None
@@ -13,6 +14,7 @@ def mse(y, y_hat):
     ret = ret / m
 
     return ret
+
 
 if __name__ == "__main__":
     X = np.array([0, 15, -9, 7, 12, 3, -21])
