@@ -10,7 +10,7 @@ def dot(x, y):
     ret = 0
     for i in range(len(x)):
         ret += x[i] * y[i]
-    return ret
+    return float(ret)
 
 
 if __name__ == "__main__":
