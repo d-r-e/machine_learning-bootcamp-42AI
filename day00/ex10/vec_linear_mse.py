@@ -11,10 +11,12 @@ def vec_linear_mse(x, y, theta):
         return None
     if x.shape[0] != y.shape[0] or x.shape[1] != theta.shape[0]:
         return None
-    return np.dot(x.dot(theta) - y, x.dot(theta) - y) / y.size
+    return np.dot((x.dot(theta) - y).transpose(), x.dot(theta) - y) / y.size
 
+
+"""
 if __name__ == "__main__":
-    
+
     X = np.array([
         [ -6,  -7,  -9],
             [ 13,  -2,  14],
@@ -33,3 +35,4 @@ if __name__ == "__main__":
 
     print(vec_linear_mse(X, Y, W))
     # 130.71428571
+"""
