@@ -4,7 +4,7 @@
 #                                                       :::      ::::::::    #
 #    cost_function.py                                 :+:      :+:    :+:    #
 #                                                   +:+ +:+         +:+      #
-#    By: darodrig <darodrig@student.42madrid.com> +#+  +:+       +#+         #
+#    By: darodrig                                 +#+  +:+       +#+         #
 #                                               +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/22 16:07:59 by darodrig        #+#    #+#              #
 #    Updated: 2020/04/22 16:07:59 by darodrig       ###   ########.fr        #
