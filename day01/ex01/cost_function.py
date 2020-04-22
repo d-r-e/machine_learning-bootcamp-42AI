@@ -31,3 +31,6 @@ if __name__ == "__main__":
     Y2 = np.array([[19.], [42.], [67.], [93.]])
     print(cost_elem_(theta2, X2, Y2))
     print(cost_(theta2, X2, Y2))
+
+#Bonus: Cost functions
+# https://stats.stackexchange.com/questions/154879/a-list-of-cost-functions-used-in-neural-networks-alongside-applications
