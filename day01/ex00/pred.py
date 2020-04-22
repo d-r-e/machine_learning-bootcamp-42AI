@@ -4,7 +4,7 @@
 #                                                        :::      ::::::::    #
 #    pred.py                                           :+:      :+:    :+:    #
 #                                                    +:+ +:+         +:+      #
-#    By: darodrig <darodrig@42madrid.com>          +#+  +:+       +#+         #
+#    By: darodrig <darodrig@student.42madrid.com>  +#+  +:+       +#+         #
 #                                                +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/22 11:25:40 by darodrig         #+#    #+#              #
 #    Updated: 2020/04/22 11:25:40 by darodrig        ###   ########.fr        #
