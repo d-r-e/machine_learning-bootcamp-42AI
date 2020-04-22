@@ -9,6 +9,8 @@ def cost_elem_(theta, X, Y):
         return None
     if X.shape[1] + 1 != theta.shape[0] or X.shape[0] != Y.shape[0]:
         return None
+    if X.size == 0 or Y.size == 0 or theta.size == 0:
+        return None
     ones = np.ones((X.shape[0], 1))
     X = np.concatenate((ones, X.reshape(X.shape)), axis=1)
     ret = X[:, 0].reshape(ones.shape)
