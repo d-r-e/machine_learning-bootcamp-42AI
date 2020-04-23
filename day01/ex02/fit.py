@@ -8,7 +8,7 @@
 #    By: darodrig <darodrig@42madrid.com>         +#+  +:+       +#+         #
 #                                               +#+#+#+#+#+   +#+            #
 #    Created: 2020/04/22 16:12:59 by darodrig        #+#    #+#              #
-#    Updated: 2020/04/23 15:47:59 by darodrig       ###   ########.fr        #
+#    Updated: 2020/04/23 15:47:50 by darodrig       ###   ########.fr        #
 #                                                                            #
 # ************************************************************************** #
 
@@ -53,7 +53,7 @@ if __name__ == "__main__":
     X1 = np.array([[0.], [1.], [2.], [3.], [4.]])
     Y1 = np.array([[2.], [6.], [10.], [14.], [18.]])
     theta1 = np.array([[1.], [1.]])
-    theta1 = fit_(theta1, X1, Y1, alpha=0.9, n_cycle=2000)
+    theta1 = fit_(theta1, X1, Y1, alpha=0.01, n_cycle=2000)
 
     print(theta1)
     print(predict_(theta1, X1))
