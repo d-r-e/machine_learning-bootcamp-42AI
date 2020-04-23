@@ -66,3 +66,6 @@ if __name__ == "__main__":
     theta2 = fit_(theta2, X2, Y2, alpha=0.0005, n_cycle=42000)
     print(theta2)
     print(predict_(theta2, X2))
+
+# theory:
+# https://link.medium.com/XcHsmFr7U5
