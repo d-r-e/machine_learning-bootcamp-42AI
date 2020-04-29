@@ -1,8 +1,10 @@
 #! /usr/bin/env python3
-import numpy as np 
+import numpy as np
+
 
 def sigmoid_(x):
     return 1 / (1 + np.exp(-x))
+
 
 if __name__ == "__main__":
     x = -4
