@@ -22,8 +22,8 @@ def vec_log_loss_(y_true, y_pred, m, eps=1e-15):
         y_pred = np.array(y_pred)
         if m != y_true.size or m != y_pred.size:
             return None
-        j = -(1/m) * ((y_true * np.log(y_pred) +
-                      (1-y_true) * np.log(1-y_pred)))
+        j = (-1 / m) * ((y_true * np.log(y_pred) +
+                      (1 - y_true) * np.log(1 - y_pred)))
         return np.sum(j)
     except Exception:
         return None
