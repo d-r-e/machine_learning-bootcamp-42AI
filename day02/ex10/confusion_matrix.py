@@ -20,7 +20,10 @@ def confusion_matrix_(y_true, y_pred, labels=None):
     tn = 0
     fp = 0
     fn = 0
-    values = list(set(y_true))
+    if labels == None:
+        values = list(set(y_true))
+    else:
+        values = labels
     for i, elem in enumerate(y_true):
         if y_pred[i] == values[1] and y_true[i] == y_pred[i]:
             tp += 1
@@ -30,7 +33,7 @@ def confusion_matrix_(y_true, y_pred, labels=None):
             tn += 1
         elif y_pred[i] == values[0] and y_true[i] != y_pred[i]:
             fn += 1
-    matrix = np.array([[tp, fp], [fn, tn]]).T
+    matrix = np.array([[tp, fp], [fn, tn]])
     return matrix
 
 
@@ -40,4 +43,4 @@ if __name__ == "__main__":
     y_true = np.array(['dog', 'dog', 'norminet', 'norminet', 'dog', 'norminet'])
 
     print(confusion_matrix_(y_true, y_pred))
-    #print(confusion_matrix(y_true, y_pred), labels=['dog','norminette'])
+    print(confusion_matrix_(y_true, y_pred, labels=['dog','norminet']))
