@@ -24,6 +24,8 @@ def confusion_matrix_(y_true, y_pred, labels=None):
         values = list(set(y_true))
     else:
         values = labels
+    if (len(values)) != 2:
+        return None
     for i, elem in enumerate(y_true):
         if y_pred[i] == values[1] and y_true[i] == y_pred[i]:
             tp += 1
