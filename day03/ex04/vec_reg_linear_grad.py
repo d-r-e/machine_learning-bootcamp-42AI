@@ -9,7 +9,7 @@ def vec_reg_linear_grad(y, x, theta, lambda_):
     h = x.dot(theta)
     grad[0] = (1/m) * np.sum((h - y) * x[:, 0])
     for j in range(1, x.shape[1]):
-        grad[j] = (1/m) * np.sum((h - y) * x[:, j]) + (lambda_*theta[j])
+        grad[j] = (1/m) * (np.sum((h - y) * x[:, j]) + (lambda_*theta[j]))
     return grad
 
 if __name__ == "__main__":
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     print(vec_reg_linear_grad(Y, X, theta, 1))
     # array([-192.64285714,  887.5, -679.57142857])
 
-    vec_reg_linear_grad(Y, X, theta, 0.5)
+    print(vec_reg_linear_grad(Y, X, theta, 0.5))
     # array([-192.85714286,  886.75, -679.14285714])
 
-    vec_reg_linear_grad(Y, X, theta, 0.0)
+    print(vec_reg_linear_grad(Y, X, theta, 0.0))
