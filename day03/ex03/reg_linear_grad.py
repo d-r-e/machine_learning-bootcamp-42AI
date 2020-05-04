@@ -10,7 +10,7 @@ def reg_linear_grad(y, x, theta, lambda_):
     h = x.dot(theta)
     grad[0] = (1/m) * np.sum((h - y) * x[:, 1])
     for i in range(1, x.shape[1] - 1):
-        grad[i] = (1/m) * np.sum((h - y) * x[:, i + 1]) + lambda_*theta[i]
+        grad[i] = (1/m) * (np.sum((h - y) * x[:, i + 1]) + lambda_*theta[i])
     return grad
 
 
